@@ -2,7 +2,6 @@ package ua.smartHome.sensors;
 
 import lombok.Getter;
 import lombok.ToString;
-import ua.smartHome.connection.IMqttConnection;
 import ua.smartHome.connection.MqttConnectionImpl;
 import ua.smartHome.constants.MqttTopic;
 import ua.smartHome.constants.UiConstant;

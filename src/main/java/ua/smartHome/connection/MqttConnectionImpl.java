@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 @ToString
-public class MqttConnectionImpl extends InternetThing implements IMqttConnection, MqttCallback, ActionListener{
+public class MqttConnectionImpl extends InternetThing implements MqttCallback, ActionListener{
 	//
 
 	public MqttConnectionImpl(String sensorLocation, String sensorId, String mqttTopic, String sensorType){

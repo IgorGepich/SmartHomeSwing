@@ -5,13 +5,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
-import ua.smartHome.connection.IMqttConnection;
 
 import java.awt.event.ActionListener;
 
 
 @NoArgsConstructor
-public abstract class InternetThing implements IMqttConnection{
+public abstract class InternetThing {
 
     @Getter
     @Setter
@@ -58,4 +57,6 @@ public abstract class InternetThing implements IMqttConnection{
         this.sensorId = sensorId;
         this.mqttTopic = mqttTopic;
     }
+
+    public void connectMqttServer(){}
 }
